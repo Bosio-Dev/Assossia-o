@@ -1,0 +1,103 @@
+/* Configuração geral da tela inicial */
+.tela-inicial {
+  /* Ocupa pelo menos toda a altura da janela */
+  min-height: 100vh;
+
+  /* Cor roxa do fundo */
+  background-color: #571866;
+
+  /* Cor padrão dos textos */
+  color: #ffffff;
+
+  /* Organiza os elementos verticalmente */
+  display: flex;
+  flex-direction: column;
+
+  /* Centraliza os elementos na horizontal */
+  align-items: center;
+
+  /* Centraliza o conjunto na vertical */
+  justify-content: center;
+
+  /* Alinha os textos ao centro */
+  text-align: center;
+
+  /* Espaçamento interno para telas pequenas */
+  padding: 32px 24px;
+
+  /* Evita que o padding aumente a largura total */
+  box-sizing: border-box;
+}
+
+/* Título E-COMMERCE LOCAL */
+.titulo-inicial {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(32px, 6vw, 48px);
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.3;
+
+  margin: 0;
+}
+
+/* Frase abaixo do título */
+.descricao-inicial {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  margin-top: 20px;
+  margin-bottom: 36px;
+}
+
+/* Botão Iniciar */
+.botao-iniciar {
+  width: 100%;
+  max-width: 320px;
+  min-height: 52px;
+
+  /* Cor do botão */
+  background-color: #a57bb0;
+
+  /* Remove a borda padrão do navegador */
+  border: none;
+  border-radius: 10px;
+
+  /* Organiza o texto e a seta */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Espaçamento interno */
+  padding: 0 20px;
+
+  /* Estilo do texto */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+
+  /* Cursor e animação */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Efeito ao passar o mouse pelo botão */
+.botao-iniciar:hover {
+  background-color: #91659d;
+}
+
+/* Seta do botão */
+.seta-iniciar {
+  font-size: 22px;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 480px) {
+  .titulo-inicial {
+    font-size: 32px;
+  }
+
+  .descricao-inicial {
+    font-size: 13px;
+  }
+}
