@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import TelaInicial from "./TelaInicial";
+import TelaLoja from "./TelaLoja";
 
 
 export default function App() {
@@ -14,21 +15,13 @@ export default function App() {
         /> 
       )}
 
+
       {pagina === "lojas" && (
-        <main style={{ padding: "40px", textAlign: "center" }}>
-          <h1>Lista de lojas</h1>
-          <p>A próxima página será construída aqui.</p>
+        <TelaLoja
+          onIniciar={() => setPagina("lojas")}
+        /> 
 
-          <button onClick={() => setPagina("inicio")}>
-            Voltar
-          </button>
-          
-          <button onClick={() => setPagina("padariacarlos")}>
-            padaria do carlos
-          </button>
-        </main>
       )}
-
 
 
       {pagina === "padariacarlos" && (
