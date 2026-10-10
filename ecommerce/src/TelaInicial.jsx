@@ -1,7 +1,7 @@
 
 import "./TelaInicial.css";
 
-export default function TelaInicial({ onIniciar }) {
+export default function TelaInicial({ onClick }) {
   return (
     
     <main className="tela-inicial">
@@ -18,7 +18,7 @@ export default function TelaInicial({ onIniciar }) {
 
       <button
         className="botao-iniciar"
-        onClick={onIniciar}
+        onClick={onClick}
       >
         <span>Iniciar</span>
         <span className="seta-iniciar">→</span>
