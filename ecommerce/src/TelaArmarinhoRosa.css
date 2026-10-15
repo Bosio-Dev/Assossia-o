@@ -1,0 +1,101 @@
+.tela-armarinho {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    color: #333;
+    font-family: sans-serif;
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .topo-armarinho {
+    background-color: #1f2b48;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .topo-armarinho h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .conteudo-armarinho {
+    padding: 15px;
+    flex: 1;
+  }
+  
+  .banner-desconto-azul {
+    background: linear-gradient(135deg, #1f2b48, #2c3e6b);
+    color: white;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .btn-comprar-azul {
+    background-color: white;
+    color: #1f2b48;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .filtro-categorias-azul {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+    overflow-x: auto;
+  }
+  
+  .pill-azul {
+    background-color: #1f2b48;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .detalhes-loja-texto {
+    margin-bottom: 20px;
+  }
+  
+  .detalhes-loja-texto h2 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+  }
+  
+  .descricao-loja {
+    font-size: 0.82rem;
+    color: #551a8b; /* tom idêntico ao protótipo de descrição */
+    line-height: 1.4;
+    margin-top: 8px;
+  }
+  
+  .botao-conferir-azul {
+    background-color: #2c3e6b;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: calc(100% - 30px);
+    margin: 15px auto;
+    border-radius: 8px;
+    text-align: center;
+  }

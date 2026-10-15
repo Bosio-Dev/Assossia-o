@@ -1,6 +1,6 @@
 import "./TelaLoja.css";
 
-export default function TelaLoja({ onClickLoja, onClickHome, onClickCarrinho }) {
+export default function TelaLoja({ onClickPadaria, onClickArmarinho, onClickArtesanato, onClickHome, onClickCarrinho }) {
   return (
     <div className="container-app-mobile">
       <main className="tela-loja">
@@ -19,7 +19,7 @@ export default function TelaLoja({ onClickLoja, onClickHome, onClickCarrinho }) 
 
         <div className="lista-cards">
           {/* Card Padaria do Carlos */}
-          <div className="card-loja" onClick={onClickLoja}>
+          <div className="card-loja" onClick={onClickPadaria}>
             <div className="card-imagem padaria-img"></div>
             <div className="card-info">
               <h3>Padaria do Carlos</h3>
@@ -29,7 +29,7 @@ export default function TelaLoja({ onClickLoja, onClickHome, onClickCarrinho }) 
           </div>
 
           {/* Card Armarinho da Rosa */}
-          <div className="card-loja">
+          <div className="card-loja" onClick={onClickArmarinho}>
             <div className="card-imagem armarinho-img"></div>
             <div className="card-info">
               <h3>Armarinho da Rosa</h3>
@@ -39,7 +39,7 @@ export default function TelaLoja({ onClickLoja, onClickHome, onClickCarrinho }) 
           </div>
 
           {/* Card Artesanato da Ju */}
-          <div className="card-loja">
+          <div className="card-loja" onClick={onClickArtesanato}>
             <div className="card-imagem artesanato-img"></div>
             <div className="card-info">
               <h3>Artesanato da Ju</h3>

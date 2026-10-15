@@ -1,0 +1,92 @@
+.tela-artesanato {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    color: #333;
+    font-family: sans-serif;
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .topo-artesanato {
+    background-color: #2d5a27;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .topo-artesanato h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .conteudo-artesanato {
+    padding: 15px;
+    flex: 1;
+  }
+  
+  .banner-desconto-verde {
+    background: linear-gradient(135deg, #2d5a27, #3b7a33);
+    color: white;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .btn-comprar-verde {
+    background-color: white;
+    color: #2d5a27;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .filtro-categorias-verde {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+    overflow-x: auto;
+  }
+  
+  .pill-verde {
+    background-color: #2d5a27;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .descricao-loja-verde {
+    font-size: 0.82rem;
+    color: #333;
+    line-height: 1.4;
+    margin-top: 8px;
+  }
+  
+  .botao-conferir-verde {
+    background-color: #3b7a33;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: calc(100% - 30px);
+    margin: 15px auto;
+    border-radius: 8px;
+    text-align: center;
+  }
