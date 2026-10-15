@@ -1,0 +1,30 @@
+.titulo {
+    font-size: 42px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 30px;
+  }
+  
+  .descricao {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+  }
+
+  .botao-iniciar {
+    background-color: #8a63a5; /* Tom de roxo parecido com o da sua imagem */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 14px 0;
+    font-size: 16px;
+    cursor: pointer;
+    width: 85%;
+    max-width: 320px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s;
+  }
+  
+  .botao-iniciar:hover {
+    background-color: #9b74b6;
+  }

@@ -1,0 +1,476 @@
+/* CONTAINER GERAL DA TELA */
+.container-lojas {
+    background-color: #e2e2e2;
+    min-height: 100vh;
+    padding: 30px 16px 120px; /* Mais espaço embaixo para os botões inferiores */
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza tudo na tela */
+  }
+  
+  /* 1. DIMINUIR O TÍTULO EM CIMA */
+  .titulo-lojas {
+    color: #df3eff; 
+    font-size: 24px; /* Reduzido (era 32px) */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  
+  /* BARRA DE PESQUISA */
+  .busca-container {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 24px;
+  }
+  
+  .icone-busca {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888888;
+    font-size: 14px;
+  }
+  
+  .input-busca {
+    width: 100%;
+    padding: 12px 12px 12px 42px;
+    border: none;
+    border-radius: 12px;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #000000; /* Cor escura para conseguir ler */
+  }
+  
+  /* 2. BOTÕES DE CIMA (CATEGORIAS) CORRIGIDOS */
+  .categorias-container {
+    display: flex;
+    gap: 12px; /* Dá espaço entre eles para não ficarem juntos */
+    overflow-x: auto;
+    padding: 4px 4px 12px 4px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 360px;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+  
+  .categorias-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .tag-categoria {
+    background: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px; /* Bem arredondados (não quadrados) */
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000; /* Fonte preta para dar leitura */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  /* LISTA DE CARDS */
+  .lista-lojas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+  }
+  
+  /* 3. DIMINUIR OS CARDS DE LOJAS */
+  .card-loja {
+    background: #ffffff;
+    border-radius: 20px; /* Cantos arredondados suaves */
+    padding: 10px 14px; /* Reduzido o espaçamento interno */
+    display: flex;
+    align-items: center; 
+    gap: 14px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    border-bottom: 2px solid #d4d4d4;
+    width: 100%;
+    max-width: 340px; /* Reduzido o tamanho máximo do card */
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .card-loja:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .img-loja {
+    width: 70px; /* Reduzido (era 90px) */
+    height: 70px; /* Reduzido (era 90px) */
+    border-radius: 14px;
+    object-fit: cover;
+  }
+  
+  /* COR DA FONTE DOS TEXTOS DOS CARDS */
+  .info-loja {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .info-loja h2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000; /* Cor preta nítida */
+    margin: 0 0 2px 0;
+  }
+  
+  .info-loja p {
+    font-size: 13px;
+    color: #555555; /* Cinza escuro legível */
+    margin: 0;
+  }
+  
+  .botao-favorito {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #aaaaaa;
+    cursor: pointer;
+    padding: 4px;
+  }
+  
+  /* 4. BOTÕES DE BAIXO (MENU INFERIOR) CORRIGIDOS */
+  .menu-inferior {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 360px; /* Alinhado com a largura da tela do print */
+    background-color: #591a5f; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    box-sizing: border-box;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+  }
+  
+  .item-menu {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    border-radius: 12px; /* Cantos arredondados nos botões */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+  }
+  
+  /* Botão selecionado redondo/suave */
+  .item-menu.ativo {
+    background-color: #e5e4e7; 
+    color: #591a5f; /* Inverte a cor do ícone ativo para destacar */
+  }
+  
+  /* CONTAINER PRINCIPAL DA TELA DE PRODUTOS */
+.container-interna-loja {
+  background-color: #e2e2e2; /* Mantém o padrão cinza claro de fundo */
+  min-height: 100vh;
+  padding: 24px 16px 120px; /* Margem generosa embaixo para o botão do carrinho não cobrir nada */
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CARREGAMENTO DE TELA */
+.carregando-tela {
+  color: #333333;
+  font-size: 16px;
+  text-align: center;
+  padding: 40px;
+}
+
+/* CABEÇALHO COM NOME DA LOJA (FONTES GRANDES) */
+.header-interna {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  margin-bottom: 20px;
+}
+
+.botao-voltar-seta {
+  position: absolute;
+  left: 0;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  color: #000000;
+}
+
+.titulo-loja-interna {
+  color: #000000; /* Preto forte para leitura de idosos */
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin: 0;
+  text-align: center;
+}
+
+/* BANNER DE DESCONTO VERMELHO */
+.banner-desconto {
+  background-color: #aa1414; /* Vermelho escuro igual ao Figma */
+  border-radius: 20px;
+  width: 100%;
+  max-width: 340px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.texto-banner h2 {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  text-align: left;
+}
+
+.btn-comprar-agora {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.img-banner-placeholder {
+  font-size: 42px; /* Ícone do croissant grande */
+}
+
+/* BARRA DE PESQUISA INTERNA DE PRODUTOS */
+.busca-produtos-container {
+  width: 100%;
+  max-width: 340px;
+  margin-bottom: 16px;
+}
+
+.input-busca-produtos {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #f1f1f1;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* CARROSSEL HORIZONTAL DE CATEGORIAS INTERNAS */
+.carrossel-categorias-produtos {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 340px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  scrollbar-width: none;
+}
+
+.carrossel-categorias-produtos::-webkit-scrollbar {
+  display: none;
+}
+
+.tag-produto-filtro {
+  background-color: #aa1414; /* Botões vermelhos do figma */
+  color: #ffffff; /* Texto branco com alto contraste */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* GRID DE PRODUTOS QUADRADOS (CARROSSEL HORIZONTAL) */
+.grid-horizontal-produtos {
+  display: flex;
+  gap: 14px;
+  width: 100%;
+  max-width: 340px;
+  overflow-x: auto;
+  padding-bottom: 14px;
+  scrollbar-width: none;
+}
+
+.card-produto-quadrado {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 12px;
+  width: 140px;
+  min-width: 140px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.img-produto-quadrada {
+  width: 100%;
+  height: 90px;
+  border-radius: 14px;
+  object-fit: cover;
+  background-color: #eee;
+}
+
+.card-produto-quadrado h3 {
+  font-size: 14px;
+  color: #000000;
+  margin: 8px 0 4px 0;
+  font-weight: bold;
+}
+
+.preco-produto {
+  font-size: 13px;
+  color: #aa1414; /* Preço destacado em vermelho */
+  font-weight: bold;
+  margin: 0;
+}
+
+/* BOTÃO MAIS (+) PARA ADICIONAR FACILMENTE */
+.btn-add-lista {
+  background-color: #e5e4e7;
+  color: #000000;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SUBTÍTULOS DAS SEÇÕES */
+.subtitulo-secao {
+  width: 100%;
+  max-width: 340px;
+  text-align: left;
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+  margin: 10px 0 14px 0;
+}
+
+/* LISTA VERTICAL DE MAIS VENDIDOS */
+.lista-mais-vendidos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 340px;
+}
+
+.card-mais-vendido-linha {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.img-produto-linha {
+  width: 65px;
+  height: 65px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.info-produto-linha {
+  text-align: left;
+}
+
+.info-produto-linha h3 {
+  font-size: 15px;
+  color: #000000;
+  margin: 0 0 4px 0;
+  font-weight: bold;
+}
+
+.info-produto-linha p {
+  font-size: 14px;
+  color: #aa1414;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* RODAPÉ FIXO DO APP COM O BOTÃO DE CONFERIR CARRINHO */
+.footer-fixo-carrinho {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 340px;
+  padding: 16px 0;
+  background-color: #e2e2e2; /* Esconde o fundo ao passar os cards */
+  z-index: 20;
+}
+
+.btn-conferir-carrinho {
+  background-color: #aa1414; /* Botão grande vermelho */
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(170, 20, 20, 0.3);
+  transition: background-color 0.2s;
+}
+
+.btn-conferir-carrinho:hover {
+  background-color: #c91a1a;
+}
