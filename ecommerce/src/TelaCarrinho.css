@@ -1,0 +1,135 @@
+.tela-carrinho {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    color: #333;
+    font-family: sans-serif;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  
+  .topo-carrinho {
+    background-color: #fff;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .info-loja-mini {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .info-loja-mini strong {
+    font-size: 0.95rem;
+  }
+  
+  .info-loja-mini p {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #666;
+  }
+  
+  .abas-topo {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.85rem;
+    color: #666;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+  }
+  
+  .abas-topo .ativo {
+    color: #551a8b;
+    font-weight: bold;
+  }
+  
+  .link-voltar {
+    background: none;
+    border: none;
+    color: #333;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  
+  .corpo-carrinho {
+    padding: 0 15px 20px 15px;
+  }
+  
+  .corpo-carrinho h2 {
+    margin: 0 0 5px 0;
+    font-size: 1.4rem;
+  }
+  
+  .corpo-carrinho h3 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .aviso-carrinho {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .alerta-box {
+    background-color: #e2d9eb;
+    border-left: 4px solid #551a8b;
+    padding: 12px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    color: #332244;
+  }
+  
+  .resumo-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+  }
+  
+  .linha-resumo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .linha-resumo.total {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+  }
+  
+  .valor-total {
+    color: #551a8b;
+    font-size: 1.2rem;
+  }
+  
+  .nota-taxa {
+    font-size: 0.7rem;
+    color: #888;
+    margin: 10px 0 0 0;
+  }
+  
+  .botao-whatsapp {
+    background-color: #4a154b;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.95rem;
+  }
+  
+  .botao-whatsapp:hover {
+    background-color: #3b103c;
+  }

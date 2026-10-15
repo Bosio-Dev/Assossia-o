@@ -1,8 +1,9 @@
-
 import { useState } from "react";
 import TelaInicial from "./TelaInicial";
 import TelaLoja from "./TelaLoja";
-
+import TelaPadariaCarlos from "./TelaPadariaCarlos";
+import TelaProdutosPadaria from "./TelaProdutosPadaria";
+import TelaCarrinho from "./TelaCarrinho";
 
 export default function App() {
   const [pagina, setPagina] = useState("inicio");
@@ -11,25 +12,37 @@ export default function App() {
     <>
       {pagina === "inicio" && (
         <TelaInicial
-          onIniciar={() => setPagina("lojas")}
-        /> 
+          onClick={() => setPagina("lojas")}
+        />
       )}
-
 
       {pagina === "lojas" && (
         <TelaLoja
-          onIniciar={() => setPagina("lojas")}
-        /> 
-
+          onClickLoja={() => setPagina("padaria")}
+          onClickHome={() => setPagina("inicio")}
+          onClickCarrinho={() => setPagina("carrinho")}
+        />
       )}
 
+      {pagina === "padaria" && (
+        <TelaPadariaCarlos
+          onVoltar={() => setPagina("lojas")}
+          onClick={() => setPagina("produtos-padaria")}
+        />
+      )}
 
-      {pagina === "padariacarlos" && (
-        <main>
-          <button onClick={() => setPagina("padariaprodutos")}>
-            Conferir Produtos
-          </button>
-        </main>
+      {pagina === "produtos-padaria" && (
+        <TelaProdutosPadaria
+          onVoltar={() => setPagina("padaria")}
+          onClick={() => setPagina("carrinho")}
+        />
+      )}
+
+      {pagina === "carrinho" && (
+        <TelaCarrinho
+          onVoltar={() => setPagina("produtos-padaria")}
+          onClickHome={() => setPagina("lojas")}
+        />
       )}
     </>
   );

@@ -1,0 +1,195 @@
+.tela-produtos {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    color: #333;
+    font-family: sans-serif;
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .topo-produtos {
+    background-color: #a82020;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .topo-produtos h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .coracao-topo {
+    font-size: 1.2rem;
+  }
+  
+  .conteudo-produtos {
+    padding: 15px;
+    flex: 1;
+  }
+  
+  .banner-desconto {
+    background: linear-gradient(135deg, #8b0000, #c0392b);
+    color: white;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .texto-desconto {
+    margin: 0 0 10px 0;
+    font-size: 0.85rem;
+    font-weight: bold;
+  }
+  
+  .btn-comprar-agora {
+    background-color: white;
+    color: #8b0000;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .icone-banner {
+    font-size: 2.2rem;
+  }
+  
+  .barra-pesquisa-prod input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+    outline: none;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+  
+  .filtro-categorias-prod {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+    overflow-x: auto;
+  }
+  
+  .pill {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .subtitulo-secao {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .grid-produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .card-produto {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  
+  .foto-prod {
+    height: 90px;
+    background-color: #eaeaea;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .card-produto h4 {
+    margin: 0 0 5px 0;
+    font-size: 0.9rem;
+  }
+  
+  .preco {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: bold;
+  }
+  
+  .secao-mais-vendidos h4 {
+    margin: 0 0 10px 0;
+    font-size: 0.95rem;
+  }
+  
+  .card-horizontal {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  
+  .foto-mini {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 6px;
+  }
+  
+  .info-mini {
+    flex: 1;
+  }
+  
+  .info-mini h5 {
+    margin: 0 0 4px 0;
+    font-size: 0.85rem;
+  }
+  
+  .info-mini p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: bold;
+  }
+  
+  .badge-rating {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .botao-conferir-carrinho {
+    background-color: #a82020;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: calc(100% - 30px);
+    margin: 15px auto;
+    border-radius: 8px;
+    text-align: center;
+  }
